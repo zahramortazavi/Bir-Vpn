@@ -1,0 +1,28 @@
+@font-face {
+  font-family: shabnam;
+  src: url(fonts/Shabnam.woff);
+}
+* {
+  font-family: "shabnam";
+}
+.container-custom {
+  min-height: 80vh;
+  position: relative;
+}
+
+.shap-bg {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.custom-a {
+  font-size: 20px;
+}
+.custom-brand {
+  font-size: 33px;
+}
+.video-box{
+  margin-top: 150px !important;
+  margin-bottom: 70px;
+}
+
