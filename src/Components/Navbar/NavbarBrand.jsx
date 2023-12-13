@@ -6,7 +6,7 @@ export default function NavbarBrand() {
       className="navbar-brand fw-bold custom-brand  d-none d-xl-block d-xxl-block"
       href="#"
     >
-      BirVpn
+      BirVPN
     </a>
   );
 }

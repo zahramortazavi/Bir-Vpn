@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { levelTypes } from "../../Container/SelectConfig";
 import V2rayNapsternetV from "./V2rayNapsternetV";
 import V2rayV2rayNg from "./V2rayV2rayNg";
 
-export default function V2rayAndroid({ setShowVideo }) {
+export default function V2rayAndroid({
+  setShowVideo,
+  setSubBtnsStatus,
+  setLevel,
+}) {
   const [isShowBtn, setIsShowBtn] = useState(false);
   const clickhandler = () => {
     setIsShowBtn((prevshow) => {
@@ -10,6 +15,16 @@ export default function V2rayAndroid({ setShowVideo }) {
     });
     // setIsShowBtn(true);
   };
+
+  useEffect(() => {
+    if (isShowBtn) {
+      setLevel(levelTypes.softwareSelect);
+    }
+    setSubBtnsStatus((prevStatuses) => {
+      return { ...prevStatuses, android: isShowBtn };
+    });
+  }, [isShowBtn]);
+
   return (
     <>
       <div className="d-flex justify-content-center">

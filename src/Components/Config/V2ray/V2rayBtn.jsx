@@ -1,11 +1,13 @@
 import React from "react";
 
-export default function V2rayBtn({ setIsShowBtn, isShowBtn }) {
+export default function V2rayBtn({
+  setIsShowBtn,
+  isShowBtn,
+}) {
   const clickhandler = () => {
     setIsShowBtn((prevshow) => {
       return !prevshow;
     });
-    // setIsShowBtn(true);
   };
 
   return (

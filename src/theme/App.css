@@ -5,6 +5,20 @@
 * {
   font-family: "shabnam";
 }
+
+#root{
+  min-height: 100vh;
+}
+
+.navItem-custom {
+  margin: 0px 10px 0px 10px;
+  border-radius: 20px;
+  background-color: #f6f9fa;
+  padding: 10px 20px;
+  border: 2px solid #eef4f9;
+  min-width: 135px;
+  text-align: center;
+}
 .container-custom {
   min-height: 80vh;
   position: relative;
@@ -21,8 +35,31 @@
 .custom-brand {
   font-size: 33px;
 }
-.video-box{
+.video-box {
   margin-top: 150px !important;
   margin-bottom: 70px;
+  position: relative;
+}
+
+.close-video {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  background-color: #fff;
+  width: auto;
+  cursor: pointer !important;
+  z-index: 50;
+}
+.custom-roule{
+  height: 200px;
+  background-image: linear-gradient(to right, #8bcee4  , #4283ba);
+}
+.custom-rule-p{
+  text-align: justify;
+}
+@media only screen and (max-width: 500px) {
+  .custoom-navv{
+  direction: ltr !important;
+  }
 }
 

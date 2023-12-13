@@ -16,10 +16,10 @@ export default function Container() {
   return (
     <div className="container  mx-auto">
       <div className="row ">
-        <ImageMain />
+        {/* <ImageMain /> */}
         <SelectConfig setShowVideo={setShowVideo} />
       </div>
-      {showVideo.isshow && <Video VideoSrc={showVideo.src} />}
+      {showVideo.isshow && <Video VideoSrc={showVideo.src} setShowVideo={setShowVideo} />}
     </div>
   );
 }

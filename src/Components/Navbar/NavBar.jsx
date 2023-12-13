@@ -5,7 +5,7 @@ import NavbarCollaps from "./NavbarCollaps";
 
 export default function NavBar() {
   return (
-    <nav className="navbar  sticky-top navbar-expand-lg">
+    <nav className="navbar sticky-top navbar-expand-lg custoom-navv">
       <div className="container-fluid">
         <LogoBirVpn />
         <HambergerBtn />
